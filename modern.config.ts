@@ -4,7 +4,7 @@ import WindiCSSWebpackPlugin from 'windicss-webpack-plugin';
 // https://modernjs.dev/docs/apis/config/overview
 export default defineConfig({
   tools: {
-    webpack: (config, { appendPlugins }) => {
+    webpack: (_config, { appendPlugins }) => {
       // 添加插件
       appendPlugins([new WindiCSSWebpackPlugin() as any]);
     },
